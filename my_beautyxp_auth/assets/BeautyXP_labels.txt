@@ -1,0 +1,6 @@
+normal
+acne_prone
+redness
+pigmentation
+pores
+dark_spots
