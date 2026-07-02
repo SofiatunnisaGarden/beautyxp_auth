@@ -201,7 +201,7 @@ class RecommendationScreen extends StatelessWidget {
         ),
       ),
 
-      /// PINNED BOTTOM SAVE BUTTON
+      // BOTTOM SAVE BUTTON
       bottomNavigationBar: Container(
         padding: const EdgeInsets.only(left: 20, right: 20, bottom: 24, top: 14),
         decoration: const BoxDecoration(

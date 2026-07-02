@@ -347,7 +347,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
       ),
       body: Column(
         children: [
-          // PROGRESS INDICATOR SECTION
+          // Progress Bar Section
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 10),
             child: Column(
@@ -375,7 +375,7 @@ class _QuestionnaireScreenState extends State<QuestionnaireScreen> {
           
           const SizedBox(height: 20),
 
-          // THE SWIPABLE QUESTION DECK
+          // Question Card Section
           Expanded(
             child: PageView.builder(
               controller: _pageController,

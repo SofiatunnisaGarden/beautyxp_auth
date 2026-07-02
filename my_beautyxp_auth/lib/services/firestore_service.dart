@@ -4,7 +4,7 @@ class FirestoreService {
   final CollectionReference _historyCollection =
       FirebaseFirestore.instance.collection('analysis_history');
 
-  // 1. Create record after AI skin concern analysis
+  // Create record after AI skin concern analysis
   Future<String> createSkinAnalysisRecord({
     required String skinConcern,
     required double confidence,
@@ -32,7 +32,7 @@ class FirestoreService {
     }
   }
 
-  // 2. Create record if user only answers quiz without AI scan
+  // Create record if user only answers quiz without AI scan
   Future<String> createSkinTypeOnlyRecord({
     required String skinType,
     required String skinStatus,
@@ -59,7 +59,7 @@ class FirestoreService {
     }
   }
 
-  // 3. Update same record with questionnaire result
+  // Update same record with questionnaire result
   Future<void> updateSkinTypeResult({
     required String docId,
     required String skinType,
@@ -77,7 +77,7 @@ class FirestoreService {
     }
   }
 
-  // 4. Update same record with recommendation result
+  // Update same record with recommendation result
   Future<void> updateRecommendationResult({
     required String docId,
     required String skinType,
@@ -97,7 +97,7 @@ class FirestoreService {
     }
   }
 
-  // 5. Backup method: create full recommendation record if no docId exists
+  // Backup method: create full recommendation record if no docId exists
   Future<String> saveAnalysis({
     required String skinType,
     required String budget,

@@ -220,7 +220,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   const SizedBox(height: 28),
 
-                  // ===== BEAUTY TIP =====
+                  // ===== BEAUTY TIPS SECTION =====
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(18),
@@ -349,7 +349,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   const SizedBox(height: 12),
 
-                  // ===== SKIN TYPE =====
+                  // ===== SKIN TYPE SECTION =====
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(18),
@@ -429,7 +429,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                   const SizedBox(height: 10),
 
-                  // ===== SKIN CONCERN =====
+                  // ===== SKIN CONCERN SECTION =====
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(18),

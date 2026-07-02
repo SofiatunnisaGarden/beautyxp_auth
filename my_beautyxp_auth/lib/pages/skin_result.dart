@@ -52,14 +52,14 @@ class _SkinResultPageState extends State<SkinResultPage> {
     try {
       final prefs = await SharedPreferences.getInstance();
 
-      // 1. Create Firebase record for this AI analysis
+      // Create Firebase record for this AI analysis
       final docId = await FirestoreService().createSkinAnalysisRecord(
         skinConcern: _prediction!.predictedClass,
         confidence: _prediction!.confidence,
         imagePath: widget.imageFile.path,
       );
 
-      // 2. Save latest AI result locally for HomeScreen display
+      // Save latest AI result locally for HomeScreen display
       await Future.wait([
         prefs.setString('latest_skin_concern', _prediction!.predictedClass),
         prefs.setDouble('latest_skin_confidence', _prediction!.confidence),
@@ -227,12 +227,12 @@ class _SkinResultPageState extends State<SkinResultPage> {
   }
 
   Widget _buildBody() {
-    // 1. Handle Loading State
+    // Handle Loading State
     if (_isLoading) {
       return const Center(child: CircularProgressIndicator(color: Color(0xFFA259B3)));
     }
     
-    // 2. Handle Error State
+    // Handle Error State
     if (_errorMessage != null) {
       return Center(
         child: Padding(

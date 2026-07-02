@@ -27,6 +27,7 @@ class _MainScreenState extends State<MainScreen> {
     currentIndex = widget.initialIndex;
   }
 
+  // This function changes the selected page when the user taps the bottom navigation bar
   void _changeTab(int index) {
     setState(() {
       currentIndex = index;
@@ -67,6 +68,7 @@ class _MainScreenState extends State<MainScreen> {
         children: pages,
       ),
 
+      // Bottom navigation bar
       bottomNavigationBar: BeautyBottomNav(
         currentIndex: currentIndex,
         onTap: _changeTab,
