@@ -29,7 +29,7 @@ class _CameraScreenState extends State<CameraScreen> {
       );
 
       _controller = CameraController(
-        frontCamera,
+        frontCamera, // Use the front camera (plugin)
         ResolutionPreset.medium,
       );
 
@@ -42,7 +42,8 @@ class _CameraScreenState extends State<CameraScreen> {
       print("Error initializing camera: $e");
     }
   }
-
+  
+  //closes and releases the camera
   @override
   void dispose() {
     _controller?.dispose();
