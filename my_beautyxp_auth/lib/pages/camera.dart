@@ -42,7 +42,7 @@ class _CameraScreenState extends State<CameraScreen> {
       print("Error initializing camera: $e");
     }
   }
-  
+
   //closes and releases the camera
   @override
   void dispose() {
@@ -84,7 +84,7 @@ class _CameraScreenState extends State<CameraScreen> {
                         await _initializeControllerFuture;
                         final image = await _controller!.takePicture();
                         
-                        // Navigate to YOUR Preview Screen
+                        // Navigate to Preview Screen
                         if (mounted) {
                           Navigator.push(
                             context,
